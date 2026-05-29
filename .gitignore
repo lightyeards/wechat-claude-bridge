@@ -1,0 +1,23 @@
+node_modules/
+dist/
+data/
+*.tsbuildinfo
+
+# Sensitive config with user-specific paths
+config.json
+
+# Temp/generated files
+*.md
+!README.md
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Playwright MCP
+.playwright-mcp/

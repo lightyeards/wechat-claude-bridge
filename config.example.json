@@ -1,0 +1,27 @@
+{
+  "_docs": {
+    "allowedUsers": "允许使用机器人的微信用户 ID 列表，空数组 [] 表示允许所有人",
+    "claudePath": "Claude Code CLI 可执行文件路径，默认 claude（从 PATH 查找）",
+    "claudeArgs": "传递给 Claude CLI 的参数。当前值预授权所有工具免确认（Read/Glob/Grep/Edit/Write/Bash）",
+    "_claudeArgsDangerous": "备用参数：[\"--dangerously-skip-permissions\"] 跳过所有权限检查，替换 claudeArgs 即可切换",
+    "claudeCwd": "Claude Code 的工作目录，决定它可访问的文件范围",
+    "maxResponseLength": "Claude 回复的最大字符数，超出部分截断，默认 4000",
+    "messageChunkSize": "单条微信消息的最大长度，超长自动分段发送，默认 3500",
+    "typingIndicator": "处理消息时是否向微信发送\"正在输入\"状态，true/false",
+    "enableFileUpload": "是否将 Claude 创建的文件自动上传并发送到微信，true/false",
+    "downloadDir": "微信发送的图片/文件的临时保存目录，为空则使用系统临时目录",
+    "logLevel": "日志级别: error（仅错误）, info（常规信息）, debug（调试详情）"
+  },
+
+  "allowedUsers": [],
+  "claudePath": "claude",
+  "claudeArgs": ["--allowedTools", "Read,Glob,Grep,Edit,Write,Bash"],
+  "_claudeArgsDangerous": ["--dangerously-skip-permissions"],
+  "claudeCwd": "",
+  "maxResponseLength": 4000,
+  "messageChunkSize": 3500,
+  "typingIndicator": true,
+  "enableFileUpload": false,
+  "downloadDir": "",
+  "logLevel": "error"
+}
